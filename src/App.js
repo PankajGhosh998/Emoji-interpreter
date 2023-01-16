@@ -2,19 +2,28 @@ import React, { useState } from "react";
 import "./App.css";
 
 function App() {
-  var [inputText, setInputText] = useState("");
+  var [meaning, setMeaning] = useState("");
+
+  var emojiDictionary = {
+    "🙈": "See-No-Evil Monkey",
+    "🙉": "Hear-No-Evil Monkey",
+    "🙊": "Speak-No-Evil Monkey",
+  };
 
   function inputChangeHandler(event) {
-    setInputText(event.target.value);
+    var inputText = event.target.value;
+    var meaning = emojiDictionary[inputText];
+    setMeaning(meaning)
+  
   }
 
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Inside out</h1>
+        <h1>Animals & Nature</h1>
       </header>
       <input className="input" onChange={inputChangeHandler}></input>
-      Welcome {inputText}
+      <h2>{meaning}</h2>
     </div>
   );
 }
