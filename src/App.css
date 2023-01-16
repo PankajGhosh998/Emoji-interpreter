@@ -2,3 +2,8 @@
   text-align: center;
 }
 
+input{
+  width: 80%;
+  height: 5vh;
+  padding: 0.5rem 1rem;
+}
