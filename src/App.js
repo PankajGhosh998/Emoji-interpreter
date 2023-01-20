@@ -5,9 +5,34 @@ function App() {
   var [meaning, setMeaning] = useState("");
 
   var emojiDictionary = {
-    "🙈": "See-No-Evil Monkey",
-    "🙉": "Hear-No-Evil Monkey",
-    "🙊": "Speak-No-Evil Monkey",
+    "🙈" : "See-No-Evil Monkey",
+    "🙉" : "Hear-No-Evil Monkey",
+    "🙊" : "Speak-No-Evil Monkey",
+    "💥" : "Collision",
+    "💫" : "Dizzy",
+    "💦" : "Sweat Droplets",
+    "💨" : "Dashing Away",
+    "🐵" : "Monkey Face",
+    "🐒" : "Monkey",
+    "🦍" : "Gorilla",
+    "🦧" : "Orangutan",
+    "🐶" : "Dog Face",
+    "🐕" : "Dog",
+    "🌹" : "Rose",
+    "🥀" : "Wilted Flower",
+    "🌺" : "Hibiscus",
+    "🌻" : "Sunflower",
+    "🌼" : "Blossom",
+    "🌷" : "Tulip",
+    "🌱" : "Seedling",
+    "🌲" : "Evergreen Tree",
+    "🌳" : "Deciduous Tree",
+    "🌴" : "Palm Tree",
+    "🌵" : "Cactus",
+    "🌾" : "Sheaf of Rice",
+    "🌿" : "Herb",
+    "☘️" : "Shamrock",
+    "🍀" : "Four Leaf Clover"
   };
 
   function inputChangeHandler(event) {
